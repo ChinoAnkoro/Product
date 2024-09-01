@@ -73,7 +73,7 @@ class ProductController extends Controller
             'price' => 'required|integer',
             'maker_id' => 'required|integer',
             'stock' => 'required|integer',
-            'detail' => 'required|max:140',
+            'detail' => 'nullable|max:140',
         ]);
     
         DB::beginTransaction();
@@ -126,7 +126,7 @@ class ProductController extends Controller
             'price' => 'required|integer',
             'maker_id' => 'required|integer',
             'stock' => 'required|integer',
-            'detail' => 'required|max:140',
+            'detail' => 'nullable|max:140',
             ]);
 
             // フィールドの更新
